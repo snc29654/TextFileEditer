@@ -17,6 +17,10 @@ namespace TextFileEditer
         public Form1()
         {
             InitializeComponent();
+            richTextBox1.Font = new System.Drawing.Font("ＭＳ ゴシック", 14,
+            System.Drawing.FontStyle.Bold,
+            System.Drawing.GraphicsUnit.Point, 128);
+
         }
 
         private void button1_Click(object sender, EventArgs e)

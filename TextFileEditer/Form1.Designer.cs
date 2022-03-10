@@ -67,7 +67,7 @@ namespace TextFileEditer
             // 
             this.richTextBox1.Location = new System.Drawing.Point(35, 144);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(692, 276);
+            this.richTextBox1.Size = new System.Drawing.Size(1107, 571);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
@@ -79,7 +79,7 @@ namespace TextFileEditer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1175, 742);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
