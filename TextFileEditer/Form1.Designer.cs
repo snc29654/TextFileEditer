@@ -34,13 +34,15 @@ namespace TextFileEditer
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(29, 17);
+            this.button1.Location = new System.Drawing.Point(25, 13);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 46);
+            this.button1.Size = new System.Drawing.Size(119, 34);
             this.button1.TabIndex = 0;
             this.button1.Text = "ファイル選択";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,9 +50,10 @@ namespace TextFileEditer
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(187, 19);
+            this.button2.Location = new System.Drawing.Point(164, 14);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 43);
+            this.button2.Size = new System.Drawing.Size(105, 32);
             this.button2.TabIndex = 1;
             this.button2.Text = "書き込み";
             this.button2.UseVisualStyleBackColor = true;
@@ -58,16 +61,18 @@ namespace TextFileEditer
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(32, 81);
+            this.textBox1.Location = new System.Drawing.Point(28, 61);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(564, 27);
+            this.textBox1.Size = new System.Drawing.Size(494, 23);
             this.textBox1.TabIndex = 2;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(35, 144);
+            this.richTextBox1.Location = new System.Drawing.Point(31, 108);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1107, 571);
+            this.richTextBox1.Size = new System.Drawing.Size(969, 429);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
@@ -75,15 +80,27 @@ namespace TextFileEditer
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(297, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(99, 33);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "行読み込み";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1175, 742);
+            this.ClientSize = new System.Drawing.Size(1028, 556);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "テキストエディター";
             this.ResumeLayout(false);
@@ -98,6 +115,7 @@ namespace TextFileEditer
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button3;
     }
 }
 

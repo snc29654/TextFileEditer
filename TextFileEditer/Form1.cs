@@ -50,5 +50,29 @@ namespace TextFileEditer
             wo.Write(text);
             wo.Close();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = openFileDialog1.ShowDialog();
+            if (dr == System.Windows.Forms.DialogResult.OK)
+            {
+                //ファイルパスをテキストボックスに入れる
+                StreamReader ro = new StreamReader(openFileDialog1.FileName, Encoding.GetEncoding("utf-8"));
+
+                string text;
+
+                while (ro.Peek() != -1)
+                {
+                    text = ro.ReadToEnd();
+                    //リッチテキストへ表示
+                    richTextBox1.Text = text;
+                }
+
+                ro.Close();
+
+                ro.Close();
+            }
+
+        }
     }
 }
