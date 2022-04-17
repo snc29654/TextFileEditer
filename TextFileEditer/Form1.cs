@@ -70,7 +70,6 @@ namespace TextFileEditer
 
                 ro.Close();
 
-                ro.Close();
             }
 
         }
